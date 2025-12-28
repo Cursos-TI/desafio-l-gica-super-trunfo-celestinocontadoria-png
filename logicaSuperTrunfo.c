@@ -6,8 +6,14 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    // =======================================================
+    // Declaração das variáveis
+    // =======================================================
+    char cidade1[50],cidade2[50];
+    int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int opcao
 
     
     // Cadastro das Cartas:
