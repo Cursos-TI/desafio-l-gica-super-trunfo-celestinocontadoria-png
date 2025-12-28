@@ -6,18 +6,18 @@
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
-    // =======================================================
+    // ===================================
     // Declaração das variáveis
-    // =======================================================
+    // ===================================
     char cidade1[50],cidade2[50];
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
-    int opcao
+    int opcao;
 
-    // =======================================================
+    // ===================================
     // Cadastro das Cartas 1
-    // =======================================================
+    // ===================================
     printf("\n=== CADASTRO DA CIDADE 1 ===\n");
     printf("Nome da cidade: ");
     scanf(" %[^\n]",cidade1); //utilizei (" %[^\n]",cidade1) - porque pode aparecer nome composto.
@@ -31,15 +31,15 @@ int main() {
     printf("PIB (em bilhões): ");
     scanf("%f",&pib1);
 
-    // =======================================================
+    // ==================================
     // Cadastro das Cartas 2
-    // =======================================================
+    // ==================================
     printf("\n===CADASTRO DA CIDADE 2 ===\n");
     printf("Nome da cidade: ");
     scanf(" %[^\n]",cidade2);
 
     printf("Populacao: ");
-    scanf("%d",populacao2);
+    scanf("%d",&populacao2);
 
     printf("Area (km²): ");
     scanf("%f",&area2);
@@ -48,25 +48,53 @@ int main() {
     scanf("%f",&pib2);
 
 
+    // =================================
+    // Escolher atributo de comparação
+    // =================================
+    printf("\n=== COMPARAÇÃO DE CARTAS ===\n");
+    printf("Escolha o atributo para comparação:\n");
+    printf("1 - Populacao\n");
+    printf("2 - Area (km²)\n");
+    printf("3 - PIB (em bilhões)\n");
+    printf("Opcao:");
+    scanf("%d",&opcao);
 
+    // ==================================
+    // Exibição dos Resultados
+    // ==================================
+    if(opcao == 1){
+        printf("\nAtributo escolhido: POPULAÇÃO\n");
+    if (populacao1 > populacao2) {
+        printf("\nVencedora: %s (Cidade 1)\n",cidade1);
+    } else if (populacao2 > populacao1){
+        printf("Vencedora: %s (Cidade 2)\n",cidade2);
+    }else{
+        printf("Empate! As duas cidades tem a mesma população.\n");
+    }
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-
-    return 0;
+  }else if(opcao == 2){
+    printf("\nAtributo escolhido: ÁREA\n");
+    if(area1 > area2){
+        printf("Vencedora: %s (Cidade 1)\n",cidade1);
+    }else if(area2 > area1){
+        printf("Vencedora: %s (Cidade 2)\n",cidade2);
+    }else{
+        printf("Empate! As duas cidades tem a mesma área.\n");
+    }
+  }else if(opcao == 3){
+     printf("\nAtributo escolhido: PIB\n");
+     if(pib1 > pib2){
+        printf("Vencedora: %s (Cidade 1)\n",cidade1);
+     }else if(pib2 > pib1){
+        printf("Vencedora: %s (Cidade 2)\n",cidade2);
+     }else{
+        printf("Empate! As duas cidades tem o mesmo PIB.\n");
+     }
+  }else{
+    printf("\nOpção inválida! Você deve escolher uma das opções 1,2 ou 3.\n");
+  }
+  return 0;
 }
+
+    
+  
