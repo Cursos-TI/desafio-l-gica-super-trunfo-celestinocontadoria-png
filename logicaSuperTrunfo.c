@@ -15,17 +15,40 @@ int main() {
     float pib1, pib2;
     int opcao
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    // =======================================================
+    // Cadastro das Cartas 1
+    // =======================================================
+    printf("\n=== CADASTRO DA CIDADE 1 ===\n");
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]",cidade1); //utilizei (" %[^\n]",cidade1) - porque pode aparecer nome composto.
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    printf("Populacao: ");
+    scanf("%d",&populacao1); //O %d significa que é esperado um número decimal e o & é onde esse número será armazenado.
+
+    printf("Area (km²): ");
+    scanf("%f",&area1); //O %f ele trabalha o float na declaração das variáveis.
+
+    printf("PIB (em bilhões): ");
+    scanf("%f",&pib1);
+
+    // =======================================================
+    // Cadastro das Cartas 2
+    // =======================================================
+    printf("\n===CADASTRO DA CIDADE 2 ===\n");
+    printf("Nome da cidade: ");
+    scanf(" %[^\n]",cidade2);
+
+    printf("Populacao: ");
+    scanf("%d",populacao2);
+
+    printf("Area (km²): ");
+    scanf("%f",&area2);
+
+    printf("PIB (em bilhões): ");
+    scanf("%f",&pib2);
+
+
+
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
