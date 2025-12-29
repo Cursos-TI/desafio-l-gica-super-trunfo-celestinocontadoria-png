@@ -22,6 +22,7 @@ int main() {
     printf("Nome da cidade: ");
     scanf(" %[^\n]",cidade1); //utilizei (" %[^\n]",cidade1) - porque pode aparecer nome composto.
 
+    // Não precisa colocar ponto (.)
     printf("Populacao: ");
     scanf("%d",&populacao1); //O %d significa que é esperado um número decimal e o & é onde esse número será armazenado.
 
