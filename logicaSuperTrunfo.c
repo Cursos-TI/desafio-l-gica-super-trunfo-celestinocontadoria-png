@@ -84,9 +84,9 @@ int main() {
   }else if(opcao == 3){
      printf("\nAtributo escolhido: PIB\n");
      if(pib1 > pib2){
-        printf("Vencedora: % (Cidade 1)\n",cidade1); // O nome da cidade está saindo cortado. Resolvi tirar o s do %s.
+        printf("Vencedora: %s (Cidade 1)\n",cidade1);
      }else if(pib2 > pib1){
-        printf("Vencedora: % (Cidade 2)\n",cidade2);
+        printf("Vencedora: %s (Cidade 2)\n",cidade2);
      }else{
         printf("Empate! As duas cidades tem o mesmo PIB.\n");
      }
