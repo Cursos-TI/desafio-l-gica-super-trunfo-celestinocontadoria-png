@@ -36,7 +36,7 @@ int main() {
     // ==================================
     printf("\n===CADASTRO DA CIDADE 2 ===\n");
     printf("Nome da cidade: ");
-    scanf(" %[^\n]",cidade2);
+    scanf(" %49[^\n]",cidade2); // %49 Limita para não estourar o vetor.
 
     printf("Populacao: ");
     scanf("%d",&populacao2);
